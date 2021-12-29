@@ -156,12 +156,27 @@ export const JFilter = styled.div `
     justify-content : space-around;
     align-items: flex-start;
     padding : 15px 0;
+    transition: ease all .5s;
+
+    @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    }
 `
 
 export const JFOpt = styled.div `
     width : 40%;
     font-weight: 400;
     display : flex;
+    transition: ease all .5s;
+   
+ @media (max-width: 768px) {
+   margin-right: 13%;
+    }
+    @media (max-width: 660px) {
+   margin-right: 21%;
+    }
 `
 
 export const Dropdown = styled.h3 `
@@ -169,7 +184,12 @@ export const Dropdown = styled.h3 `
 `
 
 export const JFSearch = styled.div `
+transition: ease all .5s;
     width : 35%;
+    @media (max-width: 768px) {
+  margin: 5%;
+  padding-top: 5%;
+}
 `
 
 export const HLeftIn = styled.input `
@@ -224,6 +244,7 @@ export const JobSec = styled.div `
     ::-webkit-scrollbar-thumb:hover {
         background: #5535; 
     }
+  
 `
 
 export const JobDetailed = styled.div `
@@ -236,7 +257,69 @@ export const JobDetailed = styled.div `
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    margin-bottom : 1.5%;
+    margin-bottom : 2%;
+    transition: ease all .5s;
+    
+    @media (max-width: 1350px) {
+       width: 80%;
+       margin-right: 11%;
+    }
+    @media (max-width: 1200px) {
+       width: 73%;
+       margin-right: 17%;
+       
+    }
+    @media (max-width: 1130px) {
+       width: 65%;
+       margin-right: 19%;
+       
+    }
+    @media (max-width: 1070px) {
+       
+       margin-right: 25%;
+       
+    }
+    @media (max-width: 992px) {
+       width: 60%;
+       margin-right: 28%;
+       
+    }
+    @media (max-width: 950px) {
+  
+       margin-right: 33%;
+       
+    }
+    @media (max-width: 910px) {
+       width: 55%;
+       margin-right: 36%;
+       
+    }
+    @media (max-width: 870px) {
+  width: 50%;
+  
+}
+@media (max-width: 830px) {
+    margin-right: 40%;
+  
+}
+@media (max-width: 790px) {
+    margin-right: 43%;
+  
+}
+@media (max-width: 768px) {
+    margin-right: 47%;
+    width: 45%;
+  
+}
+@media (max-width: 700px) {
+    margin-right: 48%;
+    width: 41%;
+}
+@media (max-width: 660px) {
+    margin-right: 53%;
+    width: 35%;
+}
+
 `
 
 export const JTJobs = styled.div `
