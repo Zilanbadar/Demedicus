@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
-
+import { MdRefresh } from "react-icons/md";
 
 
 
@@ -65,6 +65,9 @@ export const NavH = styled.h1 `
 export const NavLiLink = styled(LinkR) `
     text-decoration: none;
     color: inherit;
+    @media (max-width: 660px) {
+    display: none;
+    }
 `
 
 export const NavUlB = styled.ul `
@@ -126,6 +129,9 @@ export const NavBtn = styled.button `
 export const NavSiLink = styled(LinkR) `
     text-decoration: none;
     color: inherit;
+    @media (max-width: 500px) {
+    font-size: 15px;
+    }
 `
 
 
@@ -147,7 +153,19 @@ export const JobsSection = styled.div `
     border-top: 1px solid #eaebed;
     border-bottom: 1px solid #eaebed;
 `
+export const Reflogo = styled(LinkR) `
+   display: none;
+   color: #fff;
+   @media (max-width: 660px) {
+    display: block;
+    font-size: 1.8rem;
+    color: inherit;
+    }
 
+`
+export const RefreshItem =styled(MdRefresh)`
+color: white;
+`
 
 export const JFilter = styled.div `
     width : 100%;
@@ -162,6 +180,7 @@ export const JFilter = styled.div `
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    z-index: 1;
     }
 `
 
@@ -177,6 +196,25 @@ export const JFOpt = styled.div `
     @media (max-width: 660px) {
    margin-right: 21%;
     }
+    @media (max-width: 600px) {
+   margin-right: 29%;
+    }
+    @media (max-width: 530px) {
+   margin-right: 36%;
+    }
+    @media (max-width: 500px) {
+   margin-right: 42%;
+    }
+    @media (max-width: 480px) {
+        margin-right: 45%;
+    }
+    @media (max-width: 440px) {
+    margin-right: 51%;
+    }
+
+    @media (max-width: 425px) {
+    margin-right: 55%;
+}
 `
 
 export const Dropdown = styled.h3 `
@@ -190,6 +228,15 @@ transition: ease all .5s;
   margin: 5%;
   padding-top: 5%;
 }
+@media (max-width: 660px) {
+    width : 60%;
+  
+    }
+    @media (max-width: 500px) {
+    width : 80%;
+    margin: 7%;
+  padding-top: 7%;
+    }
 `
 
 export const HLeftIn = styled.input `
@@ -318,6 +365,30 @@ export const JobDetailed = styled.div `
 @media (max-width: 660px) {
     margin-right: 53%;
     width: 35%;
+}
+@media (max-width: 600px) {
+    margin-right: 56%;
+    width: 30%;
+}
+@media (max-width: 590px) {
+    margin-right: 59%;
+    
+}
+@media (max-width: 530px) {
+    margin-right: 62%;
+    
+}
+@media (max-width: 500px) {
+    margin-right: 64%;
+    width: 29%;
+}
+@media (max-width: 480px) {
+    margin-right: 67%;
+    width: 27%;
+}
+@media (max-width: 440px) {
+    margin-right: 69%;
+    width: 27%;
 }
 
 `
